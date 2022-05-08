@@ -57,5 +57,5 @@ class Person {
         this.address = address;
     }
 
-    
+
 }
