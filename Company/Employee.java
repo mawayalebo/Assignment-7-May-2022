@@ -1,18 +1,20 @@
 package Company;
 
 public class Employee {
-    //containing information name, id, address, salary
+    //containing information name, id, address, salary, position
     private String name;
     private int id;
     private String address;
     private double salary;
+    private String position;
 
     //Write necessary constructor and read/write methods
-    public Employee(String name, int id, String address, double salary) {
+    public Employee(String name, int id, String address, double salary, String position) {
         this.name = name;
         this.id = id;
         this.address = address;
         this.salary = salary;
+        this.position = position;
     }
 
     public String getName() {
@@ -45,6 +47,19 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    //get yearly salary function
+    public double getYearlySalary() {
+        return salary * 12;
     }
  
 }
