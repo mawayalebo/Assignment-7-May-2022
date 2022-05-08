@@ -46,8 +46,7 @@ public class Main {
         for (int i = 0; i < s1.getListOfSubjects().length; i++) {
             System.out.println("Student 1 subject: " + s1.getListOfSubjects()[i] + " marks: " + s1.getMarks()[i]);
         }
-
-  
-    }
+    } 
     
+
 }
